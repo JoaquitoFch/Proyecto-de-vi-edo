@@ -20,7 +20,7 @@ El enfoque combina **electrónica, comunicación IoT y análisis en la nube**, m
 - **Sebastián Basaure**  
 - **Lenny Norambuena**
 
-📅 **Fecha:** 24/10/2025  
+📅 **Fecha:** 25/10/2025  
 📘 **Sección:** 002D
 
 ---
@@ -50,11 +50,13 @@ El enfoque combina **electrónica, comunicación IoT y análisis en la nube**, m
 
 ## 🔗 Protocolos y Comunicaciones
 
-- **MQTT v3.1.1/v5** – Telemetría y control (publish/subscribe)  
-- **HTTP/HTTPS (REST API)** – Configuración y webhooks  
-- **LoRa / LoRaWAN** – Comunicación de larga distancia  
-- **NTP** – Sincronización horaria  
-- **SSH/VPN** – Acceso administrativo seguro  
+MQTT (telemetría y control): publish/subscribe eficiente; tópicos MQTT over TLS: cifrado y autenticación por certificados para evitar spoofing.
+HTTP/HTTPS (REST API): configuración por UI, webhooks de notificación, y consola administrativa.
+CoAP (opcional): en dispositivos ultra-limitados si se requiere UDP.
+LoRa / LoRa WAN: enlace físico para nodos remotos (baja tasa), con gateway que traduce a MQTT.
+TCP/IP, DHCP, DNS: pila de red básica.
+NTP: sincronización horaria para registros y políticas de riego.
+SSH / VPN: acceso administrativo seguro al Raspberry Pi y servicios backend.
 
 ---
 
@@ -138,31 +140,10 @@ Este sistema contribuye a la **agricultura sostenible**, reduciendo el consumo d
 
 ---
 
-## 🧠 Reflexiones del Equipo
-
-> 💬 *“Aprendimos que la tecnología debe ser confiable, segura y útil para quien la usa en terreno.”*  
-> — Equipo de desarrollo
-
----
-
 ## 🛠️ Herramientas de Prototipado
 - Fritzing / draw.io (diagramas)
 - Node-RED (flujos locales)
 - GitHub (control de versiones)
 
----
-
-## 📸 Prototipo y Arquitectura
-*(Agrega aquí las imágenes o diagramas de tu prototipo con la ruta de tu repositorio, por ejemplo:)*  
-`/docs/arquitectura.png`  
-`/docs/prototipo.jpg`
-
----
-
-## 📄 Licencia
-Este proyecto se distribuye bajo la **Licencia MIT**.  
-Consulta el archivo [LICENSE](LICENSE) para más información.
-
----
 
 ✨ _Desarrollado con pasión por un equipo comprometido con la innovación tecnológica y el cuidado del medio ambiente._
